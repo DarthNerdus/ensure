@@ -59,6 +59,8 @@ It's just a bunch of shell scripts. There's nothing fancy going on here.
 ## Installing
 
 ```
+sudo mkdir -p /usr/local/libexec
+sudo chown "$USER":admin /usr/local/libexec # Required because macOS restrictions
 ./configure --prefix /usr/local
 make install
 ```
