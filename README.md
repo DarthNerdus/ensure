@@ -59,6 +59,10 @@ It's just a bunch of shell scripts. There's nothing fancy going on here.
 ## Installing
 
 ```
+mkdir -p $HOME/Developer
+cd $HOME/Developer
+git clone git@github.com:DarthNerdus/ensure.git
+cd ensure
 sudo mkdir -p /usr/local/libexec
 sudo chown "$USER":admin /usr/local/libexec # Required because macOS restrictions
 ./configure --prefix /usr/local
