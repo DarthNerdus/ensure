@@ -14,8 +14,8 @@ for arg in $@; do
 done
 
 log_info "Installing cask app: $app"
-if ! $(brew cask ls --versions "$app" &>/dev/null); then
-  brew cask install $app &>$ENSURE_OUTPUT;
+if ! $(brew ls --cask --versions "$app" &>/dev/null); then
+  brew install --cask $app &>$ENSURE_OUTPUT;
 
   if [ -n "$copy" ]; then
     log_info "Copying $app to $HOME/Applications"
