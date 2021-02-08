@@ -4,7 +4,6 @@ set -e
 
 source "$ENSURE_LIB/helpers.sh"
 
-ensure tap argon/mas;
 ensure package mas;
 
 app="$1";
